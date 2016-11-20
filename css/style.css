@@ -1,0 +1,238 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    font-family: geo, monospace;
+    font-size: 14px;
+    background: url('../img/Spartacus1.jpg');
+    background-size: cover;
+}
+
+.container_with_border
+{
+    position: relative;
+    top: 48px;
+    -webkit-box-shadow: 0 0 25px #FF9D40;
+    border: 5px solid #FF9D40;
+}
+
+.canvas_container
+{
+    position: relative;
+    font-family: verdana;
+    text-align: center;
+    background: url('../img/Sp2.jpg');
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.mouse_visibility_field
+{
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_buttons
+{
+    width: 200px;
+    height: 40px;
+    background: #FF7C00;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 0;
+    font-family: sans-sefif;
+}
+
+.main_buttons:hover
+{
+    background: #FFBB73;
+    border: 1px solid orange;
+}
+
+.throw_cubes_buttons
+{
+    width: 200px;
+    height: 40px;
+    background: #BF8230;
+    font-size: 20px;
+    position: absolute;
+    top: 450px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 0;
+    font-family: Helvetica, sans-serif;
+    display: none;
+}
+
+.throw_cubes_buttons:hover
+{
+    background: #FFBB73;
+    border: 1px solid orange;
+}
+
+.gl_1
+{
+    left: -850px;
+}
+
+.gl_2
+{
+    left: 850px;
+}
+
+.start_button
+{
+    top: 25px;
+}
+
+.show_top_button
+{
+    top: 170px;
+}
+
+.ending_messages
+{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 36px;
+    display: none;
+    padding-left: 50px;
+}
+
+.game_over_message
+{
+    top: 30px;
+}
+
+.end_score_message
+{
+    top: 78px;
+}
+
+.popup
+{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    display: none;
+}
+
+.popup .popup_content
+{
+    margin: 40px auto 0px auto;
+    width: 200px;
+    height: 145px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.hide_button_block
+{
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    padding: .2em 1.2em;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+    transition: all .218s ease 0s;
+    margin: 25px auto;
+    width: 37px;
+}
+
+.hide_button_block:hover
+{
+    color: rgb(24, 24, 24);
+    border: 1px solid rgb(198, 198, 198);
+    background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.hide_button_block:active
+{
+    color: rgb(51, 51, 51);
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(238,238,238) linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+}
+
+.popup_damage
+{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    display: none;
+}
+
+.popup_damage .popup_damage_content
+{
+    margin: 40px auto 0px auto;
+    width: 200px;
+    height: 145px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.hide_damage_button_block
+{
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    padding: .2em 1.2em;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    background: rgb(245, 245, 245) linear-gradient(#f4f4f4, #f1f1f1);
+    transition: all .218s ease 0s;
+    margin: 25px auto;
+    width: 37px;
+}
+
+.hide_damage_button_block:hover
+{
+    color: rgb(24, 24, 24);
+    border: 1px solid rgb(198, 198, 198);
+    background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.hide_damage_button_block:active
+{
+    color: rgb(51, 51, 51);
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(238,238,238) linear-gradient(rgb(238, 238, 238), rgb(224, 224, 224));
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1) inset;
+}

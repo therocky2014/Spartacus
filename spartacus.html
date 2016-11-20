@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Spartak</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/libs/jquery-3.0.0.min.js"></script>
+  </head>
+  <body>
+    <div id="mouseVisibilityField" class="mouse_visibility_field">
+      <div class="container_with_border">
+        <div id="canvasContainer" class="canvas_container">
+          <canvas id="canvas" class="canvas" width="1000" height="600"></canvas>
+        </div>
+        <span id="gameOverMessage" class="game_over_message ending_messages"></span>
+        <span id="endScoreMessage" class="end_score_message ending_messages"></span>
+        <input id="startButton" class="start_button main_buttons" type="button" value="Play" />
+        <input id="showTopButton" class="show_top_button main_buttons" type="button" value="Gladiators list" />
+        <input id="throwCubes1" class="throw_cubes_buttons gl_1" type="button" value="Throw cubes" />
+        <input id="throwCubes2" class="throw_cubes_buttons gl_2" type="button" value="Throw cubes" />
+      </div>
+    </div>
+    <div class="popup" id="windowPopup">
+      <div class="popup_content">
+        <p id="topPlayersParagraph"></p>
+        <div id="hideButtonBlock" class="hide_button_block">Return</div>
+      </div>
+    </div>
+    <div class="popup_damage" id="windowPopupDamage">
+      <div class="popup_damage_content">
+        <p id="damage"></p>
+        <div id="hideDamageButtonBlock" class="hide_damage_button_block">Ok</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/Brick.js"></script>
+    <script type="text/javascript" src="js/BattleCell.js"></script>
+    <script type="text/javascript" src="js/PlayerField.js"></script>
+    <script type="text/javascript" src="js/BattleCell.js"></script>
+    <script type="text/javascript" src="js/Gladiator.js"></script>
+    <script type="text/javascript" src="js/PlayerField.js"></script>
+    <script type="text/javascript" src="js/Ball.js"></script>
+    <script type="text/javascript" src="js/Platform.js"></script>
+    <script type="text/javascript" src="js/Grid.js"></script>
+    <script type="text/javascript" src="js/Graphics.js"></script>
+    <script type="text/javascript" src="js/Game.js"></script>
+    <script type="text/javascript" src="js/GameController.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
